@@ -1,64 +1,48 @@
-* {
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
   color: #333;
-  background: #f9f9f9;
-  padding: 1rem;
+  line-height: 1.6;
 }
 
-header#hero {
+/* Header Section */
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 40px;
   text-align: center;
-  padding: 4rem 0;
-  background: #282c34;
-  color: #fff;
 }
 
-header#hero h1 {
+header h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 10px;
 }
 
+header p {
+  font-size: 1.2rem;
+}
+
+/* Section Styling */
 section {
-  margin: 2rem 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-ul li {
-  background: #e0e0e0;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-}
-
-#project-list {
-  display: grid;
-  gap: 1rem;
-}
-
-.project {
-  background: #fff;
-  padding: 1rem;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 0.9rem;
+section h2 {
+  color: #4a90e2;
+  margin-bottom: 15px;
 }
+
+/* List Styling */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
