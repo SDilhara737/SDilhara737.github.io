@@ -1,0 +1,59 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #111; background: #fff; }
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 50px;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+  z-index: 1000;
+}
+header.scrolled { background: #0d1b2a; color: #fff; }
+header .logo { font-size: 1.5em; font-weight: bold; color: #0d1b2a; }
+header.scrolled .logo { color: #fff; }
+header nav a {
+  margin: 0 15px; text-decoration: none; color: inherit; font-weight: bold;
+}
+header nav a:hover { color: #0077ff; }
+header .social-icons a {
+  margin-left: 15px; color: inherit; font-size: 1.2em;
+}
+header .social-icons a:hover { color: #0077ff; }
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('your-blur-image.jpg') no-repeat center center/cover;
+  display: flex; justify-content: center; align-items: center;
+  text-align: center; color: white;
+}
+.hero-content h1 { font-size: 3em; }
+.hero-content .highlight { color: #0077ff; }
+.hero .btn {
+  margin-top: 20px; padding: 12px 30px;
+  background: #0d1b2a; color: white; border: none;
+  border-radius: 8px; cursor: pointer;
+}
+.hero .btn:hover { background: #0077ff; }
+
+/* About Section */
+#about { padding: 80px 50px; text-align: center; background: #f7f7f7; }
+#about h2 { font-size: 2em; margin-bottom: 20px; }
+.about-container { display: flex; justify-content: center; align-items: center; gap: 30px; }
+.about-container img { width: 180px; border-radius: 50%; }
+.about-container p { max-width: 600px; text-align: left; }
+
+/* Scroll-to-Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed; bottom: 20px; right: 20px;
+  z-index: 999;
+  font-size: 18px; background: #0d1b2a; color: white;
+  border: none; padding: 12px; border-radius: 50%;
+  cursor: pointer;
+}
+#scrollTopBtn:hover { background: #0077ff; }
